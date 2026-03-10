@@ -2,15 +2,15 @@ public class UseCase10PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "Madam In Eden Im Adam";
+        String input = "A man a plan a canal Panama";
 
         // Normalize string
         String normalized = input.replaceAll("\\s+", "").toLowerCase();
 
-        boolean isPalindrome = true;
-
         int start = 0;
         int end = normalized.length() - 1;
+
+        boolean isPalindrome = true;
 
         while (start < end) {
 
